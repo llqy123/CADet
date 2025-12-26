@@ -1,38 +1,24 @@
+<h2 align="center">
+SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection
+</h2>
 
-> [**SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection**](https://dl.acm.org/doi/10.1145/3746027.3754501),               
+This repository is the official implementation of [**SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection**](https://dl.acm.org/doi/10.1145/3746027.3754501) accepted by MM 2025.      
 > Qiuyu Liang, Yongqiang Zhang*,    
 
-## Performance
-
-
-
-### Open-Vocabulary on COCO
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6366788/214261751-3007d40c-5a5d-4efd-8acd-7f6a4ea62ce3.png" width=68%>
-<p>
-
-
-### Open-Vocabulary on LVIS
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6366788/214262298-ab2de22b-910a-44ba-9bc5-f0df6e4d5e14.png" width=68%>
-<p>
-
 ## Installation
-
 ### Requirements
-- Linux or macOS with Python ≥ 3.7
-- PyTorch ≥ 1.9.
+- Linux with Cuda == 11.1.
+- Python == 3.8.20.
+- PyTorch == 1.9.0.
   Install them together at [pytorch.org](https://pytorch.org) to make sure of this. Note, please check
   PyTorch version matches that is required by Detectron2.
 - Detectron2: follow [Detectron2 installation instructions](https://detectron2.readthedocs.io/tutorials/install.html).
 
 ### Example conda environment setup
 ```bash
-conda create --name CADet python=3.7 -y
-conda activate CADet
-conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c nvidia
+conda create --name cadet python=3.8.20 -y
+conda activate cadet
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # under your working directory
 
