@@ -22,7 +22,7 @@ pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f ht
 
 # under your working directory
 
-git clone https://github.com/clin1223/CADet.git
+git clone https://github.com/llqy123/CADet.git
 cd CADet
 cd detectron2
 pip install -e .
@@ -30,44 +30,31 @@ cd ..
 pip install -r requirements.txt
 ```
 
-## Features
-- Directly learn an open-vocabulary object detector from image-text pairs by formulating the task as a bipartite matching problem.
-
-- State-of-the-art results on Open-vocabulary LVIS and Open-vocabulary COCO.
-
-- Scaling and extending novel object vocabulary easily.
-
-
 ## Benchmark evaluation and training
 
 Please first [prepare datasets](prepare_datasets.md).
 
 The CADet models are finetuned on the corresponding [Box-Supervised models](https://drive.google.com/drive/folders/1ngb1mBOUvFpkcUM7D3bgIkMdUj2W5FUa?usp=sharing) (indicated by MODEL.WEIGHTS in the config files). Please train or download the Box-Supervised model and place them under CADet_ROOT/models/ before training the CADet models.
 
-To train a model, run
+To train a model with OV-COCO dataset, run
 
 ```
-python train_net.py --num-gpus 8 --config-file /path/to/config/name.yaml
+python train_net.py --num-gpus 8 --config-file configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml
 ``` 
 
 To evaluate a model with a trained/ pretrained model, run 
 
 ```
 
-python train_net.py --num-gpus 8 --config-file /path/to/config/name.yaml --eval-only MODEL.WEIGHTS /path/to/weight.pth
+python train_net.py --num-gpus 8 --config-file configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml --eval-only MODEL.WEIGHTS /path/to/weight.pth
 ``` 
 
 Download the trained network weights [here](https://drive.google.com/drive/folders/1ngb1mBOUvFpkcUM7D3bgIkMdUj2W5FUa?usp=sharing).
 
-| OV_COCO  | box mAP50 | box mAP50_novel |
-|----------|-----------|-----------------|
-| [config_RN50](configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml) | 45.8      | 32.0            |
+| OV_COCO  | Novel AP50 | Base AP50 | Overall AP50 |
+|----------|-----------|-----------------|-----------------|
+| [config_RN50](configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml) | 36.4      | 50.6            |46.9             | 
 
-| OV_LVIS       | mask mAP_all | mask mAP_novel |
-| ------------- | ------------ | -------------- |
-| [config_RN50](configs/CADet_LbaseCCcap_CLIP_R5021k_640b64_2x_ft4x_caption.yaml)   | 30.1         | 21.7           |
-| [config_Swin-B](configs/CADet_LbaseI_CLIP_SwinB_896b32_2x_ft4x_caption.yaml) | 38.1         | 26.3           |
- 
 
 ## Citation
 
