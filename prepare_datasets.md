@@ -9,10 +9,9 @@ $CADet_ROOT/datasets/
 
 Please follow the following instruction to pre-process individual datasets.
 
-### COCO and COCO Caption
+### COCO, COCO Caption and SAM-based COCO proposals
 
-First, download COCO data place them in the following way:
-
+First, download COCO data and the SAM-based COCO proposals provided via our [COCO_2017_train](https://drive.google.com/file/d/12EsjKwKxYAvo4JI1QfULNfq4mKmuyyMT/view?usp=sharing) and [COCO_2017_val](https://drive.google.com/file/d/1E0rlkotaX1ornQ7rr45QMvBbkMUG1xUR/view?usp=sharing) (alternatively, you may also generate proposals for each image using the [SAM](https://github.com/facebookresearch/segment-anything).) place them in the following way:
 ```
 coco/
     train2017/
@@ -21,6 +20,9 @@ coco/
         captions_train2017.json
         instances_train2017.json 
         instances_val2017.json
+    proposals/
+        sam_coco_2017_train_d2.pkl
+        sam_coco_2017_val_d2.pkl
 ```
 
 We first follow [OVR-CNN](https://github.com/alirezazareian/ovr-cnn/blob/master/ipynb/003.ipynb) to create the open-vocabulary COCO split. The converted files should be like:
