@@ -51,7 +51,7 @@ python train_net.py --num-gpus 8 --config-file configs/CADet_OVCOCO_CLIP_R50_1x_
 
 Download the trained network weights [here](https://drive.google.com/drive/folders/1ngb1mBOUvFpkcUM7D3bgIkMdUj2W5FUa?usp=sharing).
 
-| OV_COCO  | Novel AP50 | Base AP50 | Overall AP50 |
+| OV-COCO  | Novel AP50 | Base AP50 | Overall AP50 |
 |----------|-----------|-----------------|-----------------|
 | [config_RN50](configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml) | 36.4      | 50.6            |46.9             | 
 
