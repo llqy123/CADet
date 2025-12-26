@@ -1,23 +1,10 @@
-# CADet: Learning Object-Language Alignments for Open-Vocabulary Object Detection
 
-<p align="center"> <img src='docs/readme.jpeg' align="center" height="200px"> </p>
-
-> [**Learning Object-Language Alignments for Open-Vocabulary Object Detection**](https://arxiv.org/abs/2211.14843),               
-> Chuang Lin, Peize Sun, Yi Jiang, Ping Luo, Lizhen Qu, Gholamreza Haffari, Zehuan Yuan, Jianfei Cai,    
-> *ICLR 2023 ([https://arxiv.org/abs/2211.14843](https://arxiv.org/abs/2211.14843))*   
-
-## Highlight
-
-We are excited to announce that our paper was accepted to ICLR 2023! 🥳🥳🥳
-
-
-## A quick explainable video demo for CADet
-
-
-https://user-images.githubusercontent.com/6366788/218620999-1eb5c5eb-0479-4dcc-88ca-863f34de25a0.mp4
-
+> [**SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection**](https://dl.acm.org/doi/10.1145/3746027.3754501),               
+> Qiuyu Liang, Yongqiang Zhang*,    
 
 ## Performance
+
+
 
 ### Open-Vocabulary on COCO
 
@@ -101,11 +88,12 @@ Download the trained network weights [here](https://drive.google.com/drive/folde
 If you find this project useful for your research, please use the following BibTeX entry.
 
 ```
-@article{CADet,
-  title={Learning Object-Language Alignments for Open-Vocabulary Object Detection},
-  author={Lin, Chuang and Sun, Peize and Jiang, Yi and Luo, Ping and Qu, Lizhen and Haffari, Gholamreza and Yuan, Zehuan and Cai, Jianfei},
-  journal={arXiv preprint arXiv:2211.14843},
-  year={2022}
+@inproceedings{liang2025sam,
+  title={SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection},
+  author={Liang, Qiuyu and Zhang, Yongqiang},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
+  pages={2596--2605},
+  year={2025}
 }
 ```
 ## License
@@ -113,4 +101,4 @@ If you find this project useful for your research, please use the following BibT
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 ## Acknowledgement
-This repository was built on top of [Detectron2](https://github.com/facebookresearch/detectron2), [Detic](https://github.com/facebookresearch/Detic.git), [RegionCLIP](https://github.com/microsoft/RegionCLIP.git) and [OVR-CNN](https://github.com/alirezazareian/ovr-cnn). We thank for their hard work.
+This repository was built on top of [Detectron2](https://github.com/facebookresearch/detectron2), [Detic](https://github.com/facebookresearch/Detic.git), [RegionCLIP](https://github.com/microsoft/RegionCLIP.git), [OVR-CNN](https://github.com/alirezazareian/ovr-cnn) and [VLDet](https://github.com/clin1223/VLDet). We thank for their hard work.
