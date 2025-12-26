@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 Please first [prepare datasets](prepare_datasets.md).
 
-The CADet models are finetuned on the corresponding [Box-Supervised models](https://drive.google.com/drive/folders/1ngb1mBOUvFpkcUM7D3bgIkMdUj2W5FUa?usp=sharing) (indicated by MODEL.WEIGHTS in the config files). Please train or download the Box-Supervised model and place them under CADet_ROOT/models/ before training the CADet models.
+Similar to baseline **VLDet**, our CADet models are finetuned on the corresponding [Box-Supervised models](https://drive.google.com/drive/folders/1ngb1mBOUvFpkcUM7D3bgIkMdUj2W5FUa?usp=sharing) (indicated by MODEL.WEIGHTS in the config files). Please train or download the Box-Supervised model and place them under CADet_ROOT/models/ before training the CADet models.
 
 To train a model with OV-COCO dataset, run
 
@@ -49,11 +49,11 @@ To evaluate a model with a trained/ pretrained model, run
 python train_net.py --num-gpus 8 --config-file configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml --eval-only MODEL.WEIGHTS /path/to/weight.pth
 ``` 
 
-Download the trained network weights [here](https://drive.google.com/drive/folders/1ngb1mBOUvFpkcUM7D3bgIkMdUj2W5FUa?usp=sharing).
+Download the trained network weights.
 
-| OV-COCO  | Novel AP50 | Base AP50 | Overall AP50 |
-|----------|-----------|-----------------|-----------------|
-| [config_RN50](configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml) | 36.4      | 50.6            |46.9             | 
+| OV-COCO  | Novel AP50 | Base AP50 | Overall AP50 | weights |
+|----------|-----------|-----------------|-----------------|-----------------|
+| [config_RN50](configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml) | 36.4      | 50.6            |46.9             | [weight](https://drive.google.com/file/d/1wsLp4MO-Cpy0Y6wwqWiPwsRoP6hu-8jH/view?usp=sharing)| 
 
 
 ## Citation
