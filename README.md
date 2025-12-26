@@ -3,7 +3,7 @@
 </h2>
 
 This repository is the official implementation of [**SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection**](https://dl.acm.org/doi/10.1145/3746027.3754501) accepted by MM 2025.      
-> Qiuyu Liang, Yongqiang Zhang*,    
+> Qiuyu Liang, Yongqiang Zhang*  
 
 ## 📍Installation
 ### Requirements
