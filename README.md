@@ -1,11 +1,11 @@
 <h2 align="center">
-SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection
+✨SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection
 </h2>
 
 This repository is the official implementation of [**SAM based Region-Word Clustering and Inference Score Adjusting for Open-Vocabulary Object Detection**](https://dl.acm.org/doi/10.1145/3746027.3754501) accepted by MM 2025.      
 > Qiuyu Liang, Yongqiang Zhang*,    
 
-## Installation
+## 📍Installation
 ### Requirements
 - Linux with Cuda == 11.1.
 - Python == 3.8.20.
@@ -59,7 +59,7 @@ Download the trained network weights.
 <img src="coco_result.png" width=52%>
 <p>
 
-## Citation
+## 🙏Citation
 
 If you find this project useful for your research, please use the following BibTeX entry.
 
