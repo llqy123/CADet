@@ -30,7 +30,7 @@ cd ..
 pip install -r requirements.txt
 ```
 
-## Benchmark evaluation and training
+## 🚀Benchmark evaluation and training
 
 Please first [prepare datasets](prepare_datasets.md).
 
@@ -53,10 +53,10 @@ Download the trained network weights.
 
 | OV-COCO  | Novel AP50 | Base AP50 | Overall AP50 | Weight |
 |----------|-----------|-----------------|-----------------|-----------------|
-| [config_RN50](configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml) | 36.4      | 50.6            |46.9             | [weight](https://drive.google.com/file/d/1wsLp4MO-Cpy0Y6wwqWiPwsRoP6hu-8jH/view?usp=sharing)| 
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6366788/214261751-3007d40c-5a5d-4efd-8acd-7f6a4ea62ce3.png" width=68%>
+| [config_RN50](configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml) | 36.4      | 50.6            |46.9             | paper| 
+| [config_RN50](configs/CADet_OVCOCO_CLIP_R50_1x_caption.yaml) | 36.4      | 51.0            |47.2             | [weight](https://drive.google.com/file/d/1wsLp4MO-Cpy0Y6wwqWiPwsRoP6hu-8jH/view?usp=sharing)| 
+<p align="left">
+<img src="coco_result.png" width=52%>
 <p>
 
 ## Citation
@@ -72,9 +72,6 @@ If you find this project useful for your research, please use the following BibT
   year={2025}
 }
 ```
-## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-## Acknowledgement
+## 🤝Acknowledgement
 This repository was built on top of [Detectron2](https://github.com/facebookresearch/detectron2), [Detic](https://github.com/facebookresearch/Detic.git), [RegionCLIP](https://github.com/microsoft/RegionCLIP.git), [OVR-CNN](https://github.com/alirezazareian/ovr-cnn) and [VLDet](https://github.com/clin1223/VLDet). We thank for their hard work.
