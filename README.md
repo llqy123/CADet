@@ -74,4 +74,4 @@ If you find this project useful for your research, please use the following BibT
 ```
 
 ## 🤝Acknowledgement
-This repository was built on top of [Detectron2](https://github.com/facebookresearch/detectron2), [Detic](https://github.com/facebookresearch/Detic.git), [RegionCLIP](https://github.com/microsoft/RegionCLIP.git), [OVR-CNN](https://github.com/alirezazareian/ovr-cnn) and [VLDet](https://github.com/clin1223/VLDet). We thank for their hard work.
+This repository was built on top of [Detectron2](https://github.com/facebookresearch/detectron2), [Detic](https://github.com/facebookresearch/Detic.git), [RegionCLIP](https://github.com/microsoft/RegionCLIP.git), [OVR-CNN](https://github.com/alirezazareian/ovr-cnn), [VLDet](https://github.com/clin1223/VLDet) and [Segment Anything Model](https://github.com/facebookresearch/segment-anything/tree/main). We thank for their hard work.
