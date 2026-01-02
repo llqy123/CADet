@@ -186,9 +186,9 @@ class CustomRes5ROIHeads(Res5ROIHeads):
     def get_top_proposals(self, proposals):
         for i in range(len(proposals)):
             proposals[i].proposal_boxes.clip(proposals[i].image_size)
-        proposals = [p[:self.ws_num_props] for p in proposals]
-        # proposals2 = [p[-self.ws_num_props:] for p in proposals]
-        # proposals = [Instances.cat([p1, p2]) for p1, p2 in zip(proposals1, proposals2)]
+        proposals1 = [p[:self.ws_num_props] for p in proposals] # RPN proposals
+        proposals2 = [p[-self.ws_num_props:] for p in proposals] # SAM proposals
+        proposals = [Instances.cat([p1, p2]) for p1, p2 in zip(proposals1, proposals2)]
 
         for i, p in enumerate(proposals):
             p.proposal_boxes.tensor = p.proposal_boxes.tensor.detach()
