@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 Please first [prepare datasets](prepare_datasets.md).
 
-Similar to baseline **VLDet**, our CADet models are finetuned on the corresponding [Box-Supervised models](https://drive.google.com/drive/folders/1ngb1mBOUvFpkcUM7D3bgIkMdUj2W5FUa?usp=sharing) (indicated by MODEL.WEIGHTS in the config files). Please train or download the Box-Supervised model and place them under CADet_ROOT/models/ before training the CADet models.
+Similar to baseline [**VLDet**](https://github.com/clin1223/VLDet), our CADet models are finetuned on the corresponding [Box-Supervised models](https://drive.google.com/drive/folders/1ngb1mBOUvFpkcUM7D3bgIkMdUj2W5FUa?usp=sharing) (indicated by MODEL.WEIGHTS in the config files). Please train or download the Box-Supervised model and place them under CADet_ROOT/models/ before training the CADet models.
 
 To train a model with OV-COCO dataset, run
 
